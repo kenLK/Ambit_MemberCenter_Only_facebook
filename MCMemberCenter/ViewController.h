@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import <MC/MCFramework.h>
+#import "RegisterViewController.h"
+#import "BundlingViewController.h"
+#import "AmbitLoginViewController.h"
+#import "AmbitRegisterViewController.h"
+@interface ViewController : UIViewController<FBLoginViewDelegate,UIWebViewDelegate>
+//UIApplicationDelegate,UIWebViewDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *test;
 
-@interface ViewController : UIViewController
-
-
+@property (nonatomic, retain) UIWebView *mWebView;
 @end
 
