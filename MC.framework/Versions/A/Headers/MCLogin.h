@@ -40,8 +40,11 @@
                                     registerValue:(NSDictionary *)regValue;
 
 
--(id) initWithWebView: (UIWebView*) web
+-(id) initBasicDuplicate: (UIWebView*) web
              toURL: (NSString*) url;
+
+-(id) initOpenIDDuplicate: (UIWebView*) web
+               toURL: (NSString*) url;
 
 - (BOOL)shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType;
 

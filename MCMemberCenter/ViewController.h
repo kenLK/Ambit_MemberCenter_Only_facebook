@@ -10,13 +10,22 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <MC/MCFramework.h>
 #import "RegisterViewController.h"
-#import "BundlingViewController.h"
+#import "OpenIDBundlingViewController.h"
 #import "AmbitLoginViewController.h"
 #import "AmbitRegisterViewController.h"
+#import "AppDelegate.h"
+
+#import <Accounts/Accounts.h>
+#import <Accounts/AccountsDefines.h>
+#import <Social/Social.h>
+
 @interface ViewController : UIViewController<FBLoginViewDelegate,UIWebViewDelegate>
 //UIApplicationDelegate,UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *test;
 
 @property (nonatomic, retain) UIWebView *mWebView;
+//@property (strong, nonatomic) NSDictionary *userProfile;
+
+- (void)loadYahooUserProfile:(NSMutableDictionary *)params;
 @end
 

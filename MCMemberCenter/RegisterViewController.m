@@ -13,7 +13,7 @@
 @end
 
 @implementation RegisterViewController
-@synthesize resultJason,email,phone,password,test;
+@synthesize resultJason,email,phone,password,test,LOGIN_TYPE;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -121,19 +121,39 @@
 //    NSString* VALID_EMAIL_STR = [resultJason objectForKey:@"VALID_EMAIL_STR"];
 //    NSString* returnCode = [resultJason objectForKey:@"returnCode"];
 //    [resultJason setValue:[self email].text forKey:@"EMAIL"];
-    [resultJason setValue:[self phone].text forKey:@"PHONE"];
+//    [resultJason setValue:[self phone].text forKey:@"PHONE"];
     
     for(NSString *key in [resultJason allKeys]) {
         NSLog(@"%@",[resultJason objectForKey:key]);
     }
     
     
-    NSString* returnJason = [mcl RegisterAmbitUserInfoViaOpenID:LOGIN_TYPE_FACEBOOK registerValue:resultJason];
+    NSString *aLOGIN_TYPE = LOGIN_TYPE_FACEBOOK;
     
+    if ([@"Yahoo"isEqualToString:LOGIN_TYPE]) {
+        aLOGIN_TYPE = LOGIN_TYPE_YAHOO;
+        NSLog(@"aLOGIN_TYPE %@", aLOGIN_TYPE);
+    }
+    
+    NSString* returnJason = [mcl RegisterAmbitUserInfoViaOpenID:aLOGIN_TYPE registerValue:resultJason];
+    
+    NSData* returnData = [returnJason dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSDictionary* returnDict = [NSJSONSerialization JSONObjectWithData:returnData options:kNilOptions error:nil ];
+    
+    //註冊時return code == -430 執行綁定作業
+    if ([[returnDict objectForKey:@"returnCode"]  isEqualToString: @"-430"]) {
+        OpenIDBundlingViewController *openIDBuling = [[OpenIDBundlingViewController alloc] init];
+        
+        [self presentViewController:openIDBuling animated:YES completion:^{}];
+    }
+    
+    //    [rootViewController presentViewController:reg animated:YES completion:^{}];
     // dismiss
     MCLogger(@"%@",[self email].text);
     MCLogger(@"%@",returnJason);
     MCLogger(@"END >>>>>> submitData ");
+    
 }
 
 

@@ -28,18 +28,28 @@
 - (IBAction)LOGIN:(id)sender {
     MCLogin* mcl = [[MCLogin alloc] init];
     
-    NSString* returnJason = @"";
+    NSString* returnJson = @"";
+    NSRange range = [EMAIL.text rangeOfString:@"@"];
     
-    if (EMAIL.text) {
-        returnJason = [mcl GetAmbitUserInfoViaBase:EMAIL.text userPassword:PASSWORD.text sysID:@"OTT_ARDI"];
+    if (range.location == NSNotFound) {
+        returnJson = [mcl GetAmbitUserInfoViaBase:PHONE.text userPassword:PASSWORD.text sysID:@"OTT_ARDI"];
     }else if(PHONE.text){
-        returnJason = [mcl GetAmbitUserInfoViaBase:PHONE.text userPassword:PASSWORD.text sysID:@"OTT_ARDI"];
+        returnJson = [mcl GetAmbitUserInfoViaBase:EMAIL.text userPassword:PASSWORD.text sysID:@"OTT_ARDI"];
     }else{
         
         MCLogger(@"please input account>>>>>");
     }
+    NSData* genData = [returnJson dataUsingEncoding:NSUTF8StringEncoding];
+    //        data = [data subdataWithRange:NSMakeRange(0, [data length] - 1)];
     
-    MCLogger(@"returnJason>>>>>%@",returnJason);
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:genData options:kNilOptions error:nil];
+    
+     if ([[json objectForKey:@"returnCode"] isEqual:@"-430"]) {
+         MCLogger(@"bundling");
+    }
+    
+    
+    MCLogger(@"returnJason>>>>>%@",json);
 }
 
 /*
