@@ -20,6 +20,7 @@
 		3311D26C1A0A267A004259CA /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3311D2691A0A267A004259CA /* GooglePlus.framework */; };
 		333642BB1A16085500229459 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333642BA1A16085500229459 /* Social.framework */; };
 		3337B03919F5F84F00A24624 /* OpenIDBundlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337B03819F5F84F00A24624 /* OpenIDBundlingViewController.m */; };
+		335B3F1A1A39B47700C1B0E9 /* APTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B3F191A39B47700C1B0E9 /* APTGViewController.m */; };
 		3379A1CD1A0CAB4F002E2E4B /* MC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1CC1A0CAB4F002E2E4B /* MC.framework */; };
 		3379A1EA1A0CB9A5002E2E4B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1E61A0CB952002E2E4B /* AddressBook.framework */; };
 		3379A1EC1A0CB9B0002E2E4B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1EB1A0CB9B0002E2E4B /* AssetsLibrary.framework */; };
@@ -74,6 +75,8 @@
 		333642BA1A16085500229459 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3337B03719F5F84F00A24624 /* OpenIDBundlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenIDBundlingViewController.h; sourceTree = "<group>"; };
 		3337B03819F5F84F00A24624 /* OpenIDBundlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenIDBundlingViewController.m; sourceTree = "<group>"; };
+		335B3F181A39B47700C1B0E9 /* APTGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTGViewController.h; sourceTree = "<group>"; };
+		335B3F191A39B47700C1B0E9 /* APTGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTGViewController.m; sourceTree = "<group>"; };
 		3379A1CC1A0CAB4F002E2E4B /* MC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MC.framework; sourceTree = "<group>"; };
 		3379A1E61A0CB952002E2E4B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		3379A1E81A0CB983002E2E4B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,8 @@
 		330FB70D19E264A30015D20A /* MCMemberCenter */ = {
 			isa = PBXGroup;
 			children = (
+				335B3F181A39B47700C1B0E9 /* APTGViewController.h */,
+				335B3F191A39B47700C1B0E9 /* APTGViewController.m */,
 				33ED315319E5EC5A0017E7E9 /* Main.storyboard */,
 				33ED310A19E2A4920017E7E9 /* MCCONFIG.plist */,
 				330FB71219E264A30015D20A /* AppDelegate.h */,
@@ -344,6 +349,7 @@
 				33ED315819EC2DE00017E7E9 /* BundlingViewController.m in Sources */,
 				330FB71719E264A30015D20A /* ViewController.m in Sources */,
 				33ED316619EE019B0017E7E9 /* AmbitRegisterViewController.m in Sources */,
+				335B3F1A1A39B47700C1B0E9 /* APTGViewController.m in Sources */,
 				33ED316119EDE0100017E7E9 /* AmbitLoginViewController.m in Sources */,
 				3337B03919F5F84F00A24624 /* OpenIDBundlingViewController.m in Sources */,
 				33ED315219E53E6E0017E7E9 /* RegisterViewController.m in Sources */,

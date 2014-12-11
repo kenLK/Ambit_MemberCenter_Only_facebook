@@ -62,7 +62,7 @@
         MCLogger(@"getLoginResult: %@", [page getLoginResult]?@"YES":@"NO");
         NSUserDefaults* userPrefs = [NSUserDefaults standardUserDefaults];
 
-        MCLogger(@"resultJason>>>>>>>>>%@>>>>>>>>", [userPrefs objectForKey:@"bundlingJason"]);
+        MCLogger(@"resultJason>>>>>>>>>%@>>>>>>>>", [userPrefs objectForKey:@"returnJason"]);
         
         [self dismissViewControllerAnimated:YES completion:^{}];
     }
