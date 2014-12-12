@@ -494,6 +494,22 @@
     [appDelegate createYahooSession];
     NSLog(@"yahoo create finish>>>>>");
 }
+- (IBAction)aptgLogin:(id)sender {
+    
+    MCLogger(@"aptgLogin>>>>>>>>>>>>>INTO>>>>>>>>>>>>>>");
+    
+    
+    CGRect webFrame = CGRectMake(0.0, 0.0, self.view.frame.size.width,self.view.frame.size.height);
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:webFrame];
+    
+    
+    MCLogin* aptgLogin = [[MCLogin alloc] init];
+    
+    aptgLogin = [aptgLogin initAPTGWithWebView:webView];
+    
+    [self.view addSubview:webView];
+    
+}
 - (void)loadYahooUserProfile:(NSMutableDictionary *)params
 {
     NSLog(@"loadYahooUserProfile>>>>>");

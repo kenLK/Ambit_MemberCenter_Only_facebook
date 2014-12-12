@@ -71,6 +71,16 @@
                                     <action selector="yahooLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oZ8-Ry-Mjb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-gQ-maC">
+                                <rect key="frame" x="121" y="550" width="90" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="亞太會員中心">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aptgLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oyq-ut-fJP"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v7Y-AS-cYf">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
