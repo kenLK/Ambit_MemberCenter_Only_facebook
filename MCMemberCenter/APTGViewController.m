@@ -33,7 +33,7 @@
 //    page = [[MCLogin alloc] init];
     //                                    page = [[MCLogin alloc] initWithWebView:self.mWebView toUrl:[dict objectForKey:@"bundlingSDKURL"]];
     
-//    page = [[MCLogin alloc] initAPTGWithWebView];
+    page = [[MCLogin alloc] initAPTGWithWebView:self.mWebView];
   
     MCLogger(@"webview");
     self.mWebView.delegate = self;

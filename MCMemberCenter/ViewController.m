@@ -498,16 +498,27 @@
     
     MCLogger(@"aptgLogin>>>>>>>>>>>>>INTO>>>>>>>>>>>>>>");
     
-    
+    /*
     CGRect webFrame = CGRectMake(0.0, 0.0, self.view.frame.size.width,self.view.frame.size.height);
     UIWebView *webView = [[UIWebView alloc] initWithFrame:webFrame];
-    
+    self.mWebView = webView;
+    self.mWebView.delegate = self;
     
     MCLogin* aptgLogin = [[MCLogin alloc] init];
     
-    aptgLogin = [aptgLogin initAPTGWithWebView:webView];
+    aptgLogin = [aptgLogin initAPTGWithWebView:self.mWebView];
     
-    [self.view addSubview:webView];
+    [self.view addSubview:self.mWebView];*/
+    
+    
+    
+    APTGViewController* reg = [[APTGViewController alloc] init];
+    
+    
+    UIViewController* rootViewController = [[UIApplication sharedApplication].keyWindow rootViewController];
+    MCLogger(@"YahooLogin>>>>>>>>>>>>>presentViewController>>>>>>>>>>>>>>");
+    [rootViewController presentViewController:reg animated:YES completion:^{}];
+    
     
 }
 - (void)loadYahooUserProfile:(NSMutableDictionary *)params

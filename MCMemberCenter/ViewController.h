@@ -11,6 +11,7 @@
 #import <MC/MCFramework.h>
 #import "RegisterViewController.h"
 #import "OpenIDBundlingViewController.h"
+#import "APTGViewController.h"
 #import "AmbitLoginViewController.h"
 #import "AmbitRegisterViewController.h"
 #import "AppDelegate.h"

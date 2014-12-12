@@ -123,15 +123,6 @@
                                     <action selector="weiboLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FUh-p4-YbS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cv-nr-JNe">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="亞太會員中心登入">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="113" y="523" width="120" height="30"/>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -141,7 +132,6 @@
                                 <exclude reference="Ws0-aW-wVE"/>
                                 <exclude reference="6aZ-KI-k6s"/>
                                 <exclude reference="UyO-FQ-UZF"/>
-                                <exclude reference="1Cv-nr-JNe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -151,7 +141,6 @@
                                 <include reference="Ws0-aW-wVE"/>
                                 <include reference="6aZ-KI-k6s"/>
                                 <include reference="UyO-FQ-UZF"/>
-                                <include reference="1Cv-nr-JNe"/>
                             </mask>
                         </variation>
                     </view>
