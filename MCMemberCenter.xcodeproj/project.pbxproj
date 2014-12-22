@@ -11,7 +11,6 @@
 		330FB71419E264A30015D20A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FB71319E264A30015D20A /* AppDelegate.m */; };
 		330FB71719E264A30015D20A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FB71619E264A30015D20A /* ViewController.m */; };
 		330FB71C19E264A30015D20A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330FB71B19E264A30015D20A /* Images.xcassets */; };
-		330FB71F19E264A30015D20A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FB71D19E264A30015D20A /* LaunchScreen.xib */; };
 		330FB72B19E264A30015D20A /* MCMemberCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FB72A19E264A30015D20A /* MCMemberCenterTests.m */; };
 		330FB73A19E269680015D20A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330FB73919E269680015D20A /* FacebookSDK.framework */; };
 		330FB73C19E26B880015D20A /* MCMemberCenter-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 330FB73B19E26B880015D20A /* MCMemberCenter-Info.plist */; };
@@ -21,7 +20,6 @@
 		333642BB1A16085500229459 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333642BA1A16085500229459 /* Social.framework */; };
 		3337B03919F5F84F00A24624 /* OpenIDBundlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337B03819F5F84F00A24624 /* OpenIDBundlingViewController.m */; };
 		335B3F1A1A39B47700C1B0E9 /* APTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335B3F191A39B47700C1B0E9 /* APTGViewController.m */; };
-		3379A1CD1A0CAB4F002E2E4B /* MC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1CC1A0CAB4F002E2E4B /* MC.framework */; };
 		3379A1EA1A0CB9A5002E2E4B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1E61A0CB952002E2E4B /* AddressBook.framework */; };
 		3379A1EC1A0CB9B0002E2E4B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1EB1A0CB9B0002E2E4B /* AssetsLibrary.framework */; };
 		3379A1EE1A0CB9C1002E2E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1ED1A0CB9C1002E2E4B /* Foundation.framework */; };
@@ -33,9 +31,11 @@
 		3379A1F91A0CBA12002E2E4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1F81A0CBA12002E2E4B /* Security.framework */; };
 		3379A1FB1A0CBA1C002E2E4B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1FA1A0CBA1C002E2E4B /* SystemConfiguration.framework */; };
 		3379A1FD1A0CBA25002E2E4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3379A1FC1A0CBA25002E2E4B /* UIKit.framework */; };
+		33DF78ED1A47F4C600BA3CCD /* MC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DF78EC1A47F4C600BA3CCD /* MC.framework */; };
+		33DF78EE1A47F95C00BA3CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ED315319E5EC5A0017E7E9 /* Main.storyboard */; };
+		33DF78EF1A47F96800BA3CCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FB71D19E264A30015D20A /* LaunchScreen.xib */; };
 		33ED310B19E2A4920017E7E9 /* MCCONFIG.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33ED310A19E2A4920017E7E9 /* MCCONFIG.plist */; };
 		33ED315219E53E6E0017E7E9 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED315119E53E6E0017E7E9 /* RegisterViewController.m */; };
-		33ED315519E5EC5A0017E7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ED315319E5EC5A0017E7E9 /* Main.storyboard */; };
 		33ED315819EC2DE00017E7E9 /* BundlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED315719EC2DE00017E7E9 /* BundlingViewController.m */; };
 		33ED316119EDE0100017E7E9 /* AmbitLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED315F19EDE0100017E7E9 /* AmbitLoginViewController.m */; };
 		33ED316219EDE0100017E7E9 /* AmbitLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33ED316019EDE0100017E7E9 /* AmbitLoginViewController.xib */; };
@@ -77,7 +77,6 @@
 		3337B03819F5F84F00A24624 /* OpenIDBundlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenIDBundlingViewController.m; sourceTree = "<group>"; };
 		335B3F181A39B47700C1B0E9 /* APTGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTGViewController.h; sourceTree = "<group>"; };
 		335B3F191A39B47700C1B0E9 /* APTGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTGViewController.m; sourceTree = "<group>"; };
-		3379A1CC1A0CAB4F002E2E4B /* MC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MC.framework; sourceTree = "<group>"; };
 		3379A1E61A0CB952002E2E4B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		3379A1E81A0CB983002E2E4B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3379A1EB1A0CB9B0002E2E4B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -89,6 +88,7 @@
 		3379A1F81A0CBA12002E2E4B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3379A1FA1A0CBA1C002E2E4B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3379A1FC1A0CBA25002E2E4B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		33DF78EC1A47F4C600BA3CCD /* MC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MC.framework; sourceTree = "<group>"; };
 		33ED310A19E2A4920017E7E9 /* MCCONFIG.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MCCONFIG.plist; sourceTree = SOURCE_ROOT; };
 		33ED315019E53E6E0017E7E9 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		33ED315119E53E6E0017E7E9 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DF78ED1A47F4C600BA3CCD /* MC.framework in Frameworks */,
 				333642BB1A16085500229459 /* Social.framework in Frameworks */,
 				3379A1FD1A0CBA25002E2E4B /* UIKit.framework in Frameworks */,
 				3379A1FB1A0CBA1C002E2E4B /* SystemConfiguration.framework in Frameworks */,
@@ -121,7 +122,6 @@
 				3379A1EE1A0CB9C1002E2E4B /* Foundation.framework in Frameworks */,
 				3379A1EC1A0CB9B0002E2E4B /* AssetsLibrary.framework in Frameworks */,
 				3379A1EA1A0CB9A5002E2E4B /* AddressBook.framework in Frameworks */,
-				3379A1CD1A0CAB4F002E2E4B /* MC.framework in Frameworks */,
 				3311D26C1A0A267A004259CA /* GooglePlus.framework in Frameworks */,
 				3311D26A1A0A267A004259CA /* GoogleOpenSource.framework in Frameworks */,
 				330FB73A19E269680015D20A /* FacebookSDK.framework in Frameworks */,
@@ -218,6 +218,7 @@
 		330FB73819E269550015D20A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33DF78EC1A47F4C600BA3CCD /* MC.framework */,
 				333642BA1A16085500229459 /* Social.framework */,
 				3379A1FC1A0CBA25002E2E4B /* UIKit.framework */,
 				3379A1FA1A0CBA1C002E2E4B /* SystemConfiguration.framework */,
@@ -230,7 +231,6 @@
 				3379A1EB1A0CB9B0002E2E4B /* AssetsLibrary.framework */,
 				3379A1E81A0CB983002E2E4B /* MediaPlayer.framework */,
 				3379A1E61A0CB952002E2E4B /* AddressBook.framework */,
-				3379A1CC1A0CAB4F002E2E4B /* MC.framework */,
 				3311D2671A0A2679004259CA /* GoogleOpenSource.framework */,
 				3311D2681A0A267A004259CA /* GooglePlus.bundle */,
 				3311D2691A0A267A004259CA /* GooglePlus.framework */,
@@ -320,11 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DF78EF1A47F96800BA3CCD /* LaunchScreen.xib in Resources */,
+				33DF78EE1A47F95C00BA3CCD /* Main.storyboard in Resources */,
 				33ED316719EE019C0017E7E9 /* AmbitRegisterViewController.xib in Resources */,
 				3311D26B1A0A267A004259CA /* GooglePlus.bundle in Resources */,
 				33ED316219EDE0100017E7E9 /* AmbitLoginViewController.xib in Resources */,
-				330FB71F19E264A30015D20A /* LaunchScreen.xib in Resources */,
-				33ED315519E5EC5A0017E7E9 /* Main.storyboard in Resources */,
 				33ED316919F105830017E7E9 /* top_01.jpg in Resources */,
 				330FB71C19E264A30015D20A /* Images.xcassets in Resources */,
 				330FB73C19E26B880015D20A /* MCMemberCenter-Info.plist in Resources */,
@@ -487,6 +487,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -505,6 +506,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7s armv7";
 			};
 			name = Release;
 		};

@@ -130,20 +130,6 @@
                                 
                             }];
                             
-                            /*
-                            if (mcl.loginResultJSON) {
-                                
-                                MCLogger(@"returnJason>>>%@",[mcl.loginResultJSON objectForKey:@"returnCode"]);
-                                NSDictionary *resultJSON = [NSJSONSerialization JSONObjectWithData:[returnJason dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
-                                if ([[resultJSON objectForKey:@"returnCode"] isEqual:@"-429"]) {
-                                    
-                                    MCLogger(@"FBLogin>>>>>>>>>>>>>-429>>>>>>>>>>>>>>");
-                                }
-                                if ([[resultJSON objectForKey:@"returnCode"] isEqual:@"-430"]) {
-                                    
-                                    MCLogger(@"FBLogin>>>>>>>>>>>>>-430>>>>>>>>>>>>>>");
-                                }
-                            }*/
                         }
                     }
                     failure:^(NSError *error) {
@@ -246,44 +232,6 @@
     
     MCLogger(@">>>>>END>>>>>>>");
     
-    /*
-    // create a group
-    dispatch_group_t group = dispatch_group_create();
-    // pair a dispatch_group_enter for each dispatch_group_leave
-    dispatch_group_enter(group);     // pair 1 enter
-    [self computeInBackground:1 completion:^{
-        [self getGoogleUserLogin];
-        //20141114
-//        [[[UIApplication sharedApplication] keyWindow]addSubview:reg.view];
-//        [[[UIApplication sharedApplication] keyWindow] insertSubview:self.view aboveSubview:reg.view];
-        /*
-        UIViewController* rootViewController = [[UIApplication sharedApplication].keyWindow rootViewController];
-        [rootViewController presentViewController:reg animated:YES completion:^{}];
-        */
-    /*    NSLog(@"1 done");
-        dispatch_group_leave(group); // pair 1 leave
-    }];
-    
-    
-    // again... (and again...)
-    dispatch_group_enter(group);     // pair 2 enter
-    [self computeInBackground:2 completion:^{
-        NSLog(@"2 done");
-        dispatch_group_leave(group); // pair 2 leave
-    }];
-    
-    // dispatch your final block after all the dispatch_group_enters
-    dispatch_async(dispatch_get_main_queue(), ^{
-        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
-        NSLog(@"finally!");
-    });
-    */
-    
-    /*
-    UIViewController* rootViewController = [[UIApplication sharedApplication].keyWindow rootViewController];
-    MCLogger(@"FBLogin>>>>>>>>>>>>>presentViewController>>>>>>>>>>>>>>");
-    [rootViewController presentViewController:reg animated:YES completion:^{}];
-    */
 }
 - (void)computeInBackground:(int)no completion:(void (^)(void))block {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
