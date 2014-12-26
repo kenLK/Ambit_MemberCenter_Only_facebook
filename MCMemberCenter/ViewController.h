@@ -16,9 +16,6 @@
 #import "AmbitRegisterViewController.h"
 #import "AppDelegate.h"
 
-#import <Accounts/Accounts.h>
-#import <Accounts/AccountsDefines.h>
-#import <Social/Social.h>
 
 @interface ViewController : UIViewController<FBLoginViewDelegate,UIWebViewDelegate>
 //UIApplicationDelegate,UIWebViewDelegate>
